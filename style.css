@@ -1,0 +1,381 @@
+/* =========================
+   BASIC RESET AND SETUP
+   ========================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: blue-gray;
+  color: #333333;
+}
+
+/* =========================
+   HEADER AND NAVIGATION
+   ========================= */
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(180deg, #1e90ff, #1873cc, #0f3d6b);
+  color: white;
+  padding: 20px 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+}
+.school-name {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Navigation menu using flexbox */
+.nav-menu {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.nav-menu a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* =========================
+   BANNER SECTION
+   ========================= */
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1e90ff 0%, #00bfff 100%);
+  color: white;
+  padding: 60px 20px;
+  margin: 20px;
+  border-radius: 10px;
+  min-height: 300px;
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+align-items: center;
+        gap: 20px;
+        text-align: center;
+    }
+
+
+.banner-content h2 {
+    margin: 0;
+    font-size: 38px;
+}
+
+.banner-content p {
+    margin: 0;
+    font-size: 18px;
+}
+
+.btn {
+    padding: 12px 30px;
+    background: #ffb703;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #ffa500;
+}
+
+/* --------------------------
+   MAIN CONTAINER
+-------------------------- */
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e0e0e0;
+}
+
+.card h2 {
+    margin-top: 0;
+    color: #1e90ff;
+    margin-bottom: 20px;
+}
+
+/* --------------------------
+   ABOUT SECTION
+-------------------------- */
+
+.about-content {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    flex: 1;
+    min-width: 250px;
+}
+
+.about-text p {
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.about-features {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    flex: 1;
+    min-width: 250px;
+}
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    background: #f5f9ff;
+    border-radius: 8px;
+    text-align: center;
+    flex: 1;
+    min-width: 100px;
+}
+
+.feature-icon {
+    font-size: 40px;
+}
+
+.feature p {
+    margin: 0;
+    font-weight: bold;
+    color: #1e90ff;
+}
+
+/* --------------------------
+   COURSES SECTION
+-------------------------- */
+
+.courses-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.course-card {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, #e6f2ff, #f0f8ff);
+    border: 2px solid #1e90ff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 200px;
+    gap: 10px;
+}
+.course-card h3 {
+    margin: 0;
+    color: #1e90ff;
+}
+
+.course-card p {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+    flex-grow: 1;
+}
+
+.badge {
+    display: inline-block;
+    background: #ffb703;
+    color: #333;
+    padding: 5px 12px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* --------------------------
+   STATS SECTION
+-------------------------- */
+
+.stats-section h2 {
+    text-align: center;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+.stat-number {
+    font-size: 32px;
+    font-weight: bold;
+    color: #1e90ff;
+}
+
+.stat-item p {
+    margin: 0;
+    color: #666;
+    font-weight: bold;
+}
+
+/* --------------------------
+    CONTACT SECTION
+-------------------------- */
+
+.contact-info {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 15px;
+    background: #f5f9ff;
+    border-radius: 8px;
+    text-align: center;
+    min-width: 200px;
+}
+
+.contact-item strong {
+    color: #1e90ff;
+}
+
+.contact-item p {
+    margin: 0;
+    color: #555;
+}
+/* --------------------------
+   FOOTER
+-------------------------- */
+
+.site-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, #1e90ff, #1873cc);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.site-footer p {
+    margin: 0;
+}
+
+/* --------------------------
+   RESPONSIVE DESIGN
+-------------------------- */
+
+@media (max-width: 768px) {
+    .site-header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .banner-content h2 {
+        font-size: 28px;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+}.course-card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .stats {
+        gap: 20px;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+@media (max-width: 480px) {
+    .site-header {
+        padding: 15px;
+    }
+
+    .school-name {
+        font-size: 20px;
+    }
+
+    .banner {
+        padding: 40px 15px;
+    }
+
+    .banner-content h2 {
+        font-size: 24px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+}
