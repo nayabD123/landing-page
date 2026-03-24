@@ -33,8 +33,8 @@ This project was created to practice front-end development skills, including lay
 ![Preview](screenshot.png)
 
 ## 🔗 GitHub Repository
-Add your repo link here:
-https://github.com/your-username/your-repo-name
+https://github.com/nayabD123/landing-page
+
 
 ## ▶️ How to Run
 1. Download or clone the repository
